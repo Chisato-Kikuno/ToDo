@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="uTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoリスト</title>
+  <!-- 検索エンジンにインデックスさせない設定 -->
+  <meta name="robots" content="noindex, nofollow" >
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="inputArea">
+      <input type="text" id="inputText" placeholder="ToDoを入力してください">
+      <button id="addList">作成</button>
+    </div>
+    <div class="toDoWrapper">
+      <div class="incompleteList">
+        <p>未完了のToDo</p>
+        <ul id="incompleteList"></ul>
+      </div>
+      <div class="completeList">
+        <p>完了したToDo</p>
+        <ul id="completeList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
